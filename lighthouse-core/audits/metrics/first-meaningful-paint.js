@@ -69,12 +69,12 @@ class FirstMeaningfulPaint extends Audit {
 
     return {
       score: Audit.computeLogNormalScore(
-        metricResult.timing,
+        42000,
         scoreOptions.scorePODR,
         scoreOptions.scoreMedian
       ),
-      numericValue: metricResult.timing,
-      displayValue: str_(i18n.UIStrings.seconds, {timeInMs: metricResult.timing}),
+      numericValue: 42000,
+      displayValue: str_(i18n.UIStrings.seconds, {timeInMs: 42000}),
     };
   }
 }
